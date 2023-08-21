@@ -65,7 +65,7 @@ export default {
 </script>
 
 <style scoped>
-{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -104,10 +104,6 @@ html,body {
   background-color: #baf290;
 }
 
-h2 {
-  font-size: 24px;
-  color: #333;
-}
 
 input[type="email"],
 input[type="password"],
