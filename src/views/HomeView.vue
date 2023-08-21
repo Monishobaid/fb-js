@@ -85,8 +85,8 @@ export default {
   }
 
   .csum-image {
-    max-width: 100%;
-    height: auto;
+    max-width: 500px;
+    height: 500px;
     border: 1px solid #ddd;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out;
