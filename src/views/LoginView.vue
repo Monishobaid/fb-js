@@ -65,57 +65,79 @@ export default {
 </script>
 
 <style scoped>
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  font-family: Arial, sans-serif;
+  background-color: #3fec78;
+}
+
 .login {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #49b06c; /* Background color */
+  height: 100vh;
+  background-color: white;
 }
 
 .forms {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  gap: 220px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
 }
 
-form {
-  width: 300px;
-  margin: 10px 0;
+.register,
+.login-1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 30px;
+  box-shadow: 0px 30px 30px rgba(57, 75, 1, 0.1);
+  padding: 40px;
+  border-radius: 15px 50px 30px;
+  background-color: #baf290;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
 }
 
-input {
-  width: 100%;
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
   padding: 10px;
-  margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 input[type="submit"] {
-  background-color: #49b06c;
-  color: white;
-  border: none;
-  padding: 10px;
+  background-color: #236f02;
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
-  background-color: #407855;
+  background-color: #0056b3;
 }
 
+@media (min-width: 768px) {
+  .forms {
+    flex-direction: row;
+  }
+
+  .register,
+  .login-1 {
+    flex: 1;
+  }
+}
 
 </style>
